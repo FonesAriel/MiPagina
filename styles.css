@@ -1,0 +1,70 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+header {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.subtitle {
+    margin-top: 5px;
+    color: #ecf0f1;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#about, #cv, #contact {
+    width: calc(33.33% - 40px);
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #2C3E50;
+    border-radius: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-left: 34%; /* Agrega esta regla para mover a la derecha */
+}
+
+@media (max-width: 768px) {
+    #about, #cv, #contact {
+        width: calc(50% - 40px);
+        margin-left: 0; /* Elimina el margen a la izquierda */
+    }
+}
+
+@media (max-width: 480px) {
+    #about, #cv, #contact {
+        width: calc(100% - 40px);
+        margin-left: 0; /* Elimina el margen a la izquierda */
+    }
+}
+
+h2 {
+    color: #2E4053;
+}
+
+a {
+    color: #2ecc71;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
