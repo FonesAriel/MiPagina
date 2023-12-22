@@ -42,17 +42,10 @@ h1 {
     margin-left: 34%; /* Agrega esta regla para mover a la derecha */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px), (max-width: 480px) {
     #about, #cv, #contact {
-        width: calc(50% - 40px);
-        margin-left: 0; /* Elimina el margen a la izquierda */
-    }
-}
-
-@media (max-width: 480px) {
-    #about, #cv, #contact {
-        width: calc(100% - 50px);
-        margin-left: 0; /* Elimina el margen a la izquierda */
+        width: calc(100% - 40px);
+        margin-left: 20px; /* Elimina el margen a la izquierda */
     }
 }
 
