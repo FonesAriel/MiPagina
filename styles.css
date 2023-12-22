@@ -51,7 +51,7 @@ h1 {
 
 @media (max-width: 480px) {
     #about, #cv, #contact {
-        width: calc(100% - 40px);
+        width: calc(100% - 50px);
         margin-left: 0; /* Elimina el margen a la izquierda */
     }
 }
