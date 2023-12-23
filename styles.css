@@ -1,63 +1,91 @@
+/* Estilos generales para el cuerpo de la página */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente principal y alternativas */
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado */
 }
 
+/* Contenedor principal con ancho máximo de 800px y centrado en la página */
 .container {
-    max-width: 800px;
-    margin: auto;
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: auto; /* Centra el contenedor en la página */
 }
 
+/* Estilos para la cabecera de la página */
 header {
-    background-color: #2C3E50;
-    color: white;
-    text-align: center;
-    padding: 50px 0;
+    background-color: #2C3E50; /* Color de fondo */
+    color: white; /* Color del texto */
+    text-align: center; /* Alineación del texto al centro */
+    padding: 50px 0; /* Relleno superior e inferior de 50px */
 }
 
+/* Estilos para el título principal */
 h1 {
-    margin: 0;
+    margin: 0; /* Elimina el margen superior del título principal */
 }
 
+/* Estilos para el subtítulo */
 .subtitle {
-    margin-top: 5px;
-    color: #ecf0f1;
+    margin-top: 5px; /* Márgenes superiores del subtítulo */
+    color: #ecf0f1; /* Color del subtítulo */
 }
 
+/* Contenedor principal para secciones con diseño de flexbox */
 .main-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: flex; /* Utiliza el modelo de caja flexible */
+    justify-content: space-around; /* Distribución equitativa de elementos en el contenedor */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en filas adicionales si no caben en una sola fila */
 }
 
+/* Estilos para las secciones individuales (about, cv, contact, certificados) */
 #about, #cv, #contact, #certificados {
-    width: calc(33.33% - 40px);
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #2C3E50;
-    border-radius: 30px;
-    box-sizing: border-box;
-    text-align: center;
-    margin-left: 34%; /* Agrega esta regla para mover a la derecha */
+    width: calc(33.33% - 40px); /* Ancho de las secciones con margen */
+    margin: 20px; /* Márgenes internos de las secciones */
+    padding: 20px; /* Relleno interno de las secciones */
+    border: 1px solid #2C3E50; /* Borde de 1 píxel sólido con color */
+    border-radius: 30px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluye el borde en el cálculo del tamaño total */
+    text-align: center; /* Alineación del texto al centro */
+    margin-left: 34%; /* Añadido: Mueve la sección hacia la derecha */
 }
 
+/* Estilos responsivos para pantallas más pequeñas */
 @media (max-width: 768px), (max-width: 480px) {
     #about, #cv, #contact, #certificados {
-        width: calc(100% - 40px);
-        margin-left: 20px; /* Elimina el margen a la izquierda */
+        width: calc(100% - 40px); /* Ancho del 100% con margen */
+        margin-left: 20px; /* Añadido: Elimina el margen a la izquierda */
     }
 }
 
+/* Estilos para los títulos secundarios */
 h2 {
-    color: #2E4053;
+    color: #2E4053; /* Color de los títulos secundarios */
 }
 
+/* Estilos para los enlaces */
 a {
-    color: #2ecc71;
-    text-decoration: none;
+    color: #2ecc71; /* Color de los enlaces */
+    text-decoration: none; /* Elimina la decoración de subrayado predeterminada */
 }
 
+/* Estilos para el hover de los enlaces */
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Agrega subrayado al pasar el mouse sobre los enlaces */
+}
+
+/* Estilos para el nuevo conjunto de enlaces */
+.enlaces {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+.enlaces a {
+    margin-right: 5px; /* Ajusta el espacio entre los enlaces */
+    text-decoration: none; /* Elimina la decoración de subrayado predeterminada */
+    color: #2ecc71; /* Color de los enlaces */
+}
+
+.barra {
+    margin: 0 5px; /* Ajusta el espacio alrededor de la barra */
+    color: #2ecc71; /* Color de la barra */
 }
