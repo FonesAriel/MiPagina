@@ -31,7 +31,7 @@ h1 {
     flex-wrap: wrap;
 }
 
-#about, #cv, #contact {
+#about, #cv, #contact, #certificados {
     width: calc(33.33% - 40px);
     margin: 20px;
     padding: 20px;
